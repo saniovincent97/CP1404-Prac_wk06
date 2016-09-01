@@ -10,8 +10,8 @@ STATE_NAMES = {"QLD": "Queensland", "NSW": "New South Wales", "NT": "Northern Te
 # print(STATE_NAMES)
 
 
-for key, value in STATE_NAMES.items():
-    print(key, "is", value)
+for short_state, long_state in STATE_NAMES.items():
+    print(short_state, "is", long_state)
 """
 state = input("Enter short state: ")
 while state != "":
