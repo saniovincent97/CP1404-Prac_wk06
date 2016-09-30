@@ -1,10 +1,10 @@
-word_count = {}
-input_string = input("Please enter a sentence")
-input_string = input_string.split(" ")
-for word in input_string:
-    if word in word_count:
-        word_count[word] += 1
+numbers = {}
+sentence = "this is a collection of words of nice words this is a fun thing it is"
+sentence_split = sentence.split(" ")
+for word in sentence_split:
+    if word in numbers:
+        numbers[word] += 1
     else:
-        word_count[word] = 1
-
-print(word_count)
+        numbers[word] = 1
+for sentence_split, numbers in numbers.items():
+    print("{} : {}".format(sentence_split, numbers))
